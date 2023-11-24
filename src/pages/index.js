@@ -1,3 +1,4 @@
-import Home from './home/homepage';
+import Homepage from './home/homepage';
+import Home from './home/home';
 
-export { Home };
+export { Homepage, Home };

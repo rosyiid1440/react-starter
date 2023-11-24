@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 
-const Home = () => {
+const Homepage = () => {
 
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
@@ -119,4 +119,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Homepage;

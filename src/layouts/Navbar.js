@@ -1,33 +1,46 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from '../components/Button'
 
 function Head() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="navbar navbar-light navbar-expand-md justify-content-center">
+        <div className="container">
+            <a href="/" className="navbar-brand d-flex w-50 me-auto">
+              <img src="./images/logo.png" className="d-inline-block align-top" alt="" />
+            </a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <ul className="navbar-nav w-100 justify-content-center">
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Home</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="//codeply.com">About</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#"><p className='position-relative'>Promotions<span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            HOT
+                        </span></p></a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <ul className="nav navbar-nav ms-auto w-100 justify-content-end">
+                    <li className="nav-item">
+                        <a className="nav-link" href="#" style={{ color:'black' }}>Masuk</a>
+                    </li>
+                    <li className="nav-item ms-4">
+                        <a href="#"><Button title="Daftar Sekarang" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
   );
 }
 
